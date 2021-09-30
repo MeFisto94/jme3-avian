@@ -28,7 +28,7 @@ if [ ! -d "avian" ]; then
 fi
 
 if [ ! -d "lzma-920" ]; then
-    curl -fL https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma920.tar.bz2 -o lzma920.tar.bz2
+    wget https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma920.tar.bz2
     (mkdir -p lzma-920 && cd lzma-920 && tar xjf ../lzma920.tar.bz2)
 fi
 
