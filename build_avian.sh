@@ -7,7 +7,7 @@ cd downloads
 openjdk="openjdk-1.7.0-u80-unofficial-macosx-x86_64-image"
 
 if [ ! -d "$openjdk" ]; then
-    curl -Of https://bitbucket.org/alexkasko/openjdk-unofficial-builds/downloads/$openjdk.zip
+    curl -OfL https://bitbucket.org/alexkasko/openjdk-unofficial-builds/downloads/$openjdk.zip
     unzip $openjdk.zip
 fi
 
