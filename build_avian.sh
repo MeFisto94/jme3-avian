@@ -21,14 +21,14 @@ cd jdk
 hg checkout jdk7u80-b32
 cd ../../
 
-patch -N downloads/jdk7u/jdk/src/share/javavm/export/jvm.h < GetClassLoader.patch
+patch --verbose -N downloads/jdk7u/jdk/src/share/javavm/export/jvm.h < GetClassLoader.patch
 
 if [ ! -d "avian" ]; then
     git clone https://github.com/readytalk/avian.git
 fi
 
 if [ ! -d "lzma-920" ]; then
-    curl -OfL https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma920.tar.bz2/download
+    curl -OfL https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma920.tar.bz2/download -o lzma920.tar.bz2
     (mkdir -p lzma-920 && cd lzma-920 && tar xjf ../lzma920.tar.bz2)
 fi
 
