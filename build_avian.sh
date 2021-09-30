@@ -28,7 +28,7 @@ if [ ! -d "avian" ]; then
 fi
 
 if [ ! -d "lzma-920" ]; then
-    curl -Of http://readytalk.github.io/avian-web/lzma920.tar.bz2
+    curl -OfL https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma920.tar.bz2/download
     (mkdir -p lzma-920 && cd lzma-920 && tar xjf ../lzma920.tar.bz2)
 fi
 
